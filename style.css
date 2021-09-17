@@ -1,0 +1,613 @@
+body{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+}
+/* header start */
+header{
+      width: 100%;
+      height: 77px;
+      position: fixed;
+      top: 0;
+      background-color: white;
+      z-index: 2;
+
+}
+header div{
+      float: left;
+}
+header p{
+      margin-left: 90px ;
+      padding: 18px;
+      letter-spacing: 3px;
+      font-weight: bolder;
+      border: rgb(19, 85, 192) 2px solid;
+      font-size: 1.5rem;
+      margin-top: 10px;
+
+}
+header p:hover{
+      box-shadow: 5px 10px 30px rgba(130, 147, 255, 0.5);
+}
+header .nav{
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-right: 200px;
+}
+header .nav ul{
+      list-style: none;
+}
+header .nav ul li{
+      float: left;
+      padding-right:40px;
+      padding-top: 10px;
+}
+header .nav ul li a{
+      text-decoration: none;
+      color: rgb(56, 55, 55);
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold;
+}
+header .nav ul li .first{
+      color: #7f97ff;
+}
+header .nav ul li a:hover{
+      color: #7f97ff;
+}
+
+/* header end */
+/* section one start */
+
+.checkbtn{
+      visibility: hidden;
+      font-size: 30px;
+      color: rgba(0, 0, 0, 0.9);
+      float: right;
+      line-height: 80%;
+      margin-right: -170px;
+}
+#check{
+      display: none;
+}
+@media screen and (max-width:600px) {
+      .checkbtn{
+            visibility:visible;
+      }
+      
+}
+   
+@media screen and (max-width:758px) {
+      header{
+            width: 100%;
+            height: 100px;
+      }
+      header .logo{
+            margin-left: -80px;
+            padding: 20px;
+      }
+      .checkbtn{
+            display: block;
+      }
+      header .nav ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: #ffffff;
+            top: 54px;
+            left: -200%;
+            transition: all 0.1s;
+            
+      }
+      header .nav ul li{
+            line-height: 30px;
+            clear: both;
+            margin-top: 15px;
+            
+      }
+      #check:checked ~ ul{
+            left: 0;
+            top: 10px;
+      }
+
+}
+.section1{
+      background-color: #f9f9ff;
+      width: 100%;
+      height: 665px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 75px;
+}
+.half1,.half2{
+      width: 50%;
+}
+.half1{
+      margin-left: 150px;
+      margin-bottom: 120px;
+      
+}
+.half2{
+      padding-right: 160px;
+}
+.half2 img{
+      max-width: 100%;
+      height: auto;
+      margin-top: 50px;
+}
+.half1 h3{
+      font-weight: normal;
+}
+.half1 h1{
+      font-size: 50px;
+}
+.half1 p{
+      opacity: 50%;
+}
+.half1 input{
+      padding: 8px 20px;
+      background-image: linear-gradient(to right, #8394ff,#2ea7f8);
+      outline: none;
+      color: #fff;
+      border: 1px solid #2ea7f8;
+      font-size: 15px;
+}
+.half1 input:hover{
+      box-shadow: 5px 10px 30px rgba(130, 147, 255, 0.5);
+      transition: all 0.5s ease-in;
+}
+/* section one end */
+/* section two start */
+
+.section2{
+      width: 100%;
+      height: 620px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.section2 div{
+      width: 40%;
+      margin: 0 auto;
+}
+.section2 img{
+      max-width: 90%;
+      height: auto;
+}
+.section .img2{
+      padding-left: 150px;
+}
+.text2 h3{
+      font-weight: normal;
+      opacity: 70%;
+      font-size: 15px;
+      text-transform: uppercase;
+}
+.text2 h1{
+      font-size: 40px;
+      font-weight: bold;
+      text-transform: uppercase;
+}
+.text2 p{
+      font-size: 16px;
+      opacity: 70%;
+      width: 80%;
+}
+.text2 button{
+      font-size: 15px;
+      outline: none;
+      border: 1px solid #8394ff;
+      background-image: linear-gradient(to right, #8394ff,#2ea7f8);
+      padding: 10px 15px;
+      font-weight: bold;
+      color: white;
+
+      
+}
+.text2 button:hover{
+      box-shadow: 5px 10px 30px rgba(130, 147, 255, 0.5);
+      transition: all 0.5s ease-in;
+}
+/* section two end */
+/* section three start */
+.section3{
+      width: 100%;
+      height: 650px;
+      margin: 0 auto;
+      text-align: center;
+}
+.firsttext h1{
+      font-size: 40px;
+      line-height: 10px;
+}
+.firsttext p{
+      width: 670px;
+      opacity: 70%;
+      margin: 0 auto;
+}
+.service{
+      width: 80%;
+      margin: 0 auto;
+      padding: 45px;
+}
+.ser2{
+      padding-top: 30px;
+}
+.ser1,.ser2{
+      width: 100%;
+      overflow: hidden;
+}
+.ser1 div,.ser2 div{
+      width: 32%;
+      float: left;
+      padding: 5px;
+      margin: 0 auto;
+}
+.service i{
+      font-size: 45px;
+      opacity: 80%;
+}
+.service h1{
+      opacity: 70%;
+}
+.service p{
+      opacity: 60%;
+}
+.ser1 div:hover{
+      background-color: #8293ff;
+      color: white;
+      
+}
+.ser2 div:hover{
+      background-color: #8293ff;
+      color: white;
+      
+}
+/* section three end */
+/* section four start */
+.section4{
+      width: 100%;
+      height: 300px;
+      background-image: linear-gradient(to right, #6175f6,#0f9fff);
+}
+.section4 div{
+      float: left;
+      width: 20%;
+      margin: 0 auto;
+      position: relative;
+      top: 100px;
+      left: 160px;
+}
+.section4 h1,.section4 p{
+      text-align: center;
+      color: white;
+}
+.section4 h1{
+      font-size: 45px;
+      line-height: 10px;
+}
+.section5{
+      width: 100%;
+      margin-top: 100px;
+}
+.section5 div h1{
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+}
+.section5 div p{
+      text-align: center;
+      opacity: 60%;
+      
+}
+.content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: -50px;
+}
+.content li{
+      list-style: none;
+      
+}
+.content li a{
+      text-decoration: none;
+      margin-left:40px;
+      font-size: 15px;
+      color: rgba(0, 0, 0, 0.877);
+      margin-top: 100px;
+      display: inline-block;
+      margin-bottom: 70px;
+}
+.content li a:hover{
+      color: #8293ff;
+}
+.allimg{
+      width: 80%;
+      
+      margin-left: 120px;
+}
+.img1 img,.img2 img{
+      height: 200px;
+      margin-top: 30px;
+      border-radius: 10px;
+      box-shadow: 5px 10px 30px rgba(130, 147, 255, 0.1);
+}
+.img1 img:hover,.img2 img:hover{
+      box-shadow: 5px 10px 30px rgba(130, 147, 255, 0.5);
+      transform: scale(1.1);
+}
+.img1{
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      
+}
+.img1 h2{
+      text-align: center;
+      opacity: 80%;
+      margin-bottom: 5px;
+}
+.img2 h2{
+      text-align: center;
+      opacity: 80%;
+      margin-bottom: 5px;
+}
+.img1 h3{
+      text-align: center;
+      opacity: 60%;
+      margin-top: 5px;
+      font-size: 16px;
+}
+.img2 h3{
+      text-align: center;
+      opacity: 60%;
+      margin-top: 5px;
+      font-size: 16px;
+}
+
+.img2{
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+}
+/* section four end */
+/* section six start */
+.section6{
+      width: 100%;
+      height: 700px;
+}
+.section6 .text4{
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 100px;
+
+
+}
+.section6 .text4 h1{
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+}
+.section6 .text4 p{
+      opacity: 70%;
+      
+}
+.section6 .card{
+      width: 75%;
+      height: auto;
+      display: flex;
+      justify-content: space-around;
+      margin: 0 auto;
+}
+.section6 .card1{
+      width: 300px;
+      height: 620px;
+      background-color: rgb(249, 249, 255);
+      text-align: center;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.section6 .card1 h1:first-child{
+      font-size: 50px;
+      padding-top: 8px;
+      padding: 13px;
+      border: 25px solid rgba(69, 114, 238, 0.287);
+      border-radius: 50%;
+      display: inline-block;
+}
+.section6 .card1 .edit{
+      font-size: 30px;
+      padding-top: 8px;
+}
+.section6 .card1 input{
+      outline: none;
+      background-image: linear-gradient(to right, #61aef6,#0992ee);
+      outline: none;
+      border: 1px solid white;
+      color: white;
+      font-size: 20px;
+      width: 80%;
+      padding: 6px 0;
+}
+.section6 .card1:hover{
+      background-image: linear-gradient(to right, #8394ff,#2ea7f8);
+      cursor: pointer;
+      color: white;
+      transition: all 0.2s ease-in;
+      transform: scale(1.05);
+      box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.5);
+      z-index: 1;
+}
+.section6 .card1:hover input{
+      color: rgba(0, 0, 0, 0.9);
+}
+/* section six end */
+/* footer start */
+footer{
+      background-color: rgb(4, 9, 30);
+      width: 100%;
+      height: 400px;
+      position: absolute;
+      margin-top: 100px;
+      color: white;
+}
+footer .foot{
+      width: 80%;
+      height: auto;
+      display: flex;
+      justify-content: space-around;
+      margin: 0 auto;
+      margin-top: 120px;
+}
+footer .foot .foot1 p{
+      opacity: 60%;
+}
+footer .foot .foot1 input{
+      font-size: 15px;
+      outline: none;
+      border: none;
+      padding: 10px 150px 10px 10px;
+}
+footer .foot .foot1 button{
+      font-size: 18px;
+      color: white;
+      background-color: #8293ff;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px 15px;
+}
+footer .foot .foot1 button:hover{
+      background-color: #5766c8;
+}
+footer .foot .foot1 i{
+      font-size: 15px;
+      cursor: pointer;
+      padding: 2px 5px;
+}
+footer .foot .foot1 i:hover{
+      background-color: #8293ff;
+}
+/* responsive start */
+
+@media screen and (max-width:758px) {
+      .section1{
+            height: auto;
+            width: 100%;
+            display: block;
+      }
+      .half1{
+            margin: 0 auto;
+      }
+      .half1 h3{
+            font-size: 16px;
+            margin-top: 60px;
+            display: inline-block;
+            
+      }
+      .half1 h1{
+            margin-top: 0px;
+            font-size: 40px;
+      }
+      .half2 img{
+           width: 500px;
+      }
+      .half2{
+            width: 100%;
+            padding: 0;
+      }
+      .section2{
+            display: block;
+            padding: 0;
+            margin: 0;
+            margin: 0 auto;
+      }
+      .section2 img{
+            margin-bottom: 20px;
+            width: 300px;
+      }
+      .text2 h3{
+            margin-left: 60px;
+      }
+      .text2 h1{
+            width: 500px;
+            margin: 0;
+            padding: 0;
+            margin-left: -50px;
+            font-size: 30px;
+      }
+      .text2 p{
+            width: 500px;
+            margin-left: -140px;
+            font-size: 17px;
+            text-align: center;
+            margin-top: 50px;
+      }
+      .text2 button{
+            margin-top: 100px;
+            
+      }
+      .section3{
+            width: 100%;
+            height: auto;
+            position: relative;
+            top: 200px;
+      }
+      .firsttext > h1{
+            font-size: 30px;
+            color: rgba(0, 0, 0, 0.9);
+      }
+      .firsttext p{
+            width: 80%;
+      }
+      .ser1 div, .ser2 div{
+            clear: left;
+            position: relative;
+            width: 100%;
+            height: auto;
+      }
+      .section4{
+            margin-top: 300px;
+            height: 650px;
+      }
+      .section4 div{
+            clear: left;
+      }
+      
+      .section5{
+            margin-top: 200px;
+            height: auto;
+            width: 100%;
+      }
+      .img1 , .img2 {
+            display: flex;
+            flex-direction: column;
+      }
+      .des{
+            margin-left: -100px;
+      }
+      .text4 p{
+            padding: 0 20px;
+      }
+      .card{
+            display: flex;
+            flex-direction: column;
+            
+      }
+      .card1{
+            margin-top: 30px;
+            margin-left: 40px;
+      }
+      
+      footer{
+            margin-top: 1500px;
+      }
+      .foot{
+            display: flex;
+            flex-direction: column;
+            height: 1000px;
+      }
+      
+}
